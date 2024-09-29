@@ -1,8 +1,12 @@
-# React + Vite
+# SkyCast
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Live Preview]
 
-Currently, two official plugins are available:
+CalorieLove is a calorie goal app that allows its users to track their calories by adding foods that they eat throughout the day or will eati in the future.
+SkyCast is a weather app that allows users to track current weather forecast up to 5 days ahead.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack:
+
+- **Frontend:** React.js, Vite
+- **Backend:** Node.js
+- **Other:** Tailwind CSS, Framer Motion
