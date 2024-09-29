@@ -14,7 +14,7 @@ function WeatherContainer() {
 
   return (
     <motion.div
-      className="flex flex-col w-[400px] h-[500px] bg-gradient-to-b from-cyan-400 to-blue-500 rounded-xl "
+      className="flex flex-col w-[400px] h-[500px] bg-gradient-to-b from-cyan-400 to-blue-500 rounded-xl shadow-2xl shadow-blue-700"
       initial={{ opacity: 0, scale: 0 }}
       animate={{ opacity: 1, scale: 1 }}
       whileHover={{ scale: 1.01 }}

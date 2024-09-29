@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const Searchbar = ({ onSearch }) => {
   const [query, setQuery] = useState("");
@@ -28,7 +29,11 @@ const Searchbar = ({ onSearch }) => {
             placeholder="Enter City Name"
             className="w-64 h-11 rounded-[20px] bg-white text-gray-400 pl-[15px] outline-none"
           />
-          <button type="submit" className="flex items-center justify-center bg-white w-11 h-11 rounded-[50%]">
+          <motion.button 
+          type="submit" 
+          className="flex items-center justify-center bg-white w-11 h-11 rounded-[50%]"  
+          whileHover={{rotate: 45}}
+          >
             <svg
               className="w-6 h-6 text-gray-800 dark:text-black"
               aria-hidden="true"
@@ -45,7 +50,7 @@ const Searchbar = ({ onSearch }) => {
                 d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
               />
             </svg>
-          </button>
+          </motion.button>
         </form>
       </div>
     </>

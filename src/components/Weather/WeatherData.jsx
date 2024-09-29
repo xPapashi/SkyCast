@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { format } from "date-fns";
 import { getWeatherIcon, displayLoadingIcon } from "./IconSelector";
 import { roundNum } from "../../utils/RoundNum";
-import getTodaysDate from "../../utils/TodaysDate";
+import {getTodaysDate, formatDateToDayAndMonth} from "../../utils/FormatDate";
 
 const WeatherDay = ({ day, index }) => (
   <div className="flex flex-col items-center" key={{ index }}>
@@ -11,7 +11,7 @@ const WeatherDay = ({ day, index }) => (
     </div>
     <span className="w-[32px] h-[24px]">{getWeatherIcon(day.icon, 32)}</span>
     <span className="font-light text-sm">
-      {format(new Date(day.datetime), "dd/MM")}
+      {formatDateToDayAndMonth(day.datetime)}
     </span>
   </div>
 );

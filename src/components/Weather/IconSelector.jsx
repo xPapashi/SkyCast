@@ -9,7 +9,6 @@ import PartlyCloudyNightIcon from "../icons/partly-cloudy-night";
 import ClearDayIcon from "../icons/clear-day";
 
 import LoadingIcon from "../icons/loading";
-// import ClearNightIcon from "../icons/partly-cloudy-night";
 
 const weatherIcons = {
     'snow': (size) => <SnowIcon size={size}/>,

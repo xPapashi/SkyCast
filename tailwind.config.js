@@ -8,7 +8,11 @@ export default {
     fontFamily: {
       'roboto': ['roboto']
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'sky': "url('./assets/sky.webp')",
+      },
+    },
   },
   plugins: [],
 }
