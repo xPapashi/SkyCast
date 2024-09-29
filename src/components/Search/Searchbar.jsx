@@ -19,7 +19,7 @@ const Searchbar = ({ onSearch }) => {
       <div>
         <form
           onSubmit={handleSubmit}
-          className="flex justify-center gap-2 mt-5"
+          className="flex justify-center gap-4 mt-5"
         >
           <input
             type="text"
