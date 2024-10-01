@@ -7,6 +7,7 @@ import CloudyIcon from "../icons/cloudy";
 import PartlyCloudyDayIcon from "../icons/partly-cloudy-day";
 import PartlyCloudyNightIcon from "../icons/partly-cloudy-night";
 import ClearDayIcon from "../icons/clear-day";
+import ClearNightIcon from "../icons/clear-night";
 
 import LoadingIcon from "../icons/loading";
 
@@ -19,7 +20,7 @@ const weatherIcons = {
     'partly-cloudy-day': (size) => <PartlyCloudyDayIcon size={size}/>,
     'partly-cloudy-night': (size) => <PartlyCloudyNightIcon size={size}/>,
     'clear-day': (size) => <ClearDayIcon size={size}/>,
-    // 'clear-night': (size) => <ClearNightIcon size={size}/>,
+    'clear-night': (size) => <ClearNightIcon size={size}/>,
 };
 
 function getWeatherIcon(condition, size=128) {
