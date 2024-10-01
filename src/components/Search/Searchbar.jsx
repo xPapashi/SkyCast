@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-const Searchbar = ({ onSearch }) => {
+const Searchbar = ({ fetchWeather, setSearched }) => {
   const [query, setQuery] = useState("");
 
   const handleInputChange = (e) => {
@@ -11,7 +11,8 @@ const Searchbar = ({ onSearch }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (query.trim()) {
-      onSearch(query);
+      fetchWeather(query);
+      setSearched(true);
     }
   };
 
