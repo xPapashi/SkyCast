@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 const useWeather = () => {
   const [weatherData, setWeatherData] = useState(null);
@@ -17,7 +18,7 @@ const useWeather = () => {
       const data = await response.json();
       setWeatherData(data);
     } catch (error) {
-      console.error("Error fetching weather data", error);
+      toast.error("Error fetching weather data", error);
     } finally {
       setLoading(false);
     }

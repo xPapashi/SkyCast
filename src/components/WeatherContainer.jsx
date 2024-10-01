@@ -6,10 +6,16 @@ import getCoordinates from "../utils/userCoordinates";
 import { useEffect } from "react";
 
 function WeatherContainer() {
-  const { weatherData, loading, error, fetchWeather, fetchWeatherByCoordinates } = useWeather();
+  const {
+    weatherData,
+    loading,
+    error,
+    fetchWeather,
+    fetchWeatherByCoordinates,
+  } = useWeather();
 
   useEffect(() => {
-    getCoordinates(fetchWeatherByCoordinates)
+    getCoordinates(fetchWeatherByCoordinates);
   }, []);
 
   return (

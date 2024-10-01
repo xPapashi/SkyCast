@@ -33,7 +33,6 @@ function WeatherData({ data }) {
 
   return (
     <div className="flex flex-col mt-[18px] font-roboto">
-      {console.log({ weatherData })}
       <h1 className="text-[36px] font-semibold">
         {weatherData.address}
       </h1>
